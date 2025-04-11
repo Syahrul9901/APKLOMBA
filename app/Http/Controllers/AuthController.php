@@ -28,12 +28,10 @@ class AuthController extends Controller
          
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
-            return redirect()->route('/');
+            return redirect()->route('home.tampil');
         } else {
             return redirect()->back()->with('gagal', 'Email atau password anda salah');
         }
-   
     }
-
    
 }
