@@ -33,5 +33,9 @@ class AuthController extends Controller
             return redirect()->back()->with('gagal', 'Email atau password anda salah');
         }
     }
-   
+    function logout() {
+        Auth::logout(); 
+        return redirect()->route('login.tampil');
+        
+    }
 }
