@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Steam - Toko</title>
+  <title>Web Games</title>
   <link rel="stylesheet" href="{{ asset ('bootstrap/css/bootstrap.css') }}">
   <style>
     body {
@@ -40,7 +40,7 @@
       <div class="col-md-3 sidebar">
         <h3>Web Gemes</h3>
         @if(Auth::check())
-            <b>Halo {{ Auth::user()->name}} ,selamat Datang sebagai user</b>
+            <b>Halo {{ Auth::user()->name}} ,selamat Datang sebagai {{ Auth::user()->name}}</b>
         @endif
         <ul class="list-unstyled">
         <li><a href="{{ route('home.tampil')}}">Home</a></li><br>
@@ -54,10 +54,14 @@
         </ul>
       </div>
 
-      <!-- Content -->
+      
       <div class="col-md-9">
         <h4>Users</h4>
         <div class="card bg-dark text-white mb-4">
+        <div class="text-center">
+              <h4 class="text-center">halo {{ Auth::user()->name}}</h4>
+              <p class="text-center">Game yang Sudah Dimainkan</p>
+            </div>
           <div class="row g-1">
             <div class="col-md-2 game-banner"></div>
             <div class="col-md-4 p-3">

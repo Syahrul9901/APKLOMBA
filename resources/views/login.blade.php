@@ -22,7 +22,7 @@
                             <label>Password</label>
                             <input type="password" name="password" class="form-control mb-2">
                             <button class="btn btn-primary">Submit Login</button>
-                            <p>Belum Punya Akun? <a href="{{ route('registrasi.tampil')}}">Registrasi Sekarang</a></p>
+                            <p>apakah Anda Belum Memiliki Akun? <a href="{{ route('registrasi.tampil')}}">registrasi Sekarang</a></p>
                         </form>
 
                         @if(session('gagal'))

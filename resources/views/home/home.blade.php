@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Steam - Toko</title>
+  <title>Web Games</title>
   <link rel="stylesheet" href="{{ asset ('bootstrap/css/bootstrap.css') }}">
   <style>
     body {
@@ -40,7 +40,7 @@
       <div class="col-md-3 sidebar">
         <h3>Web Gemes</h3>
         @if(Auth::check())
-            <b>Halo {{ Auth::user()->name}} ,selamat Datang sebagai user</b>
+            <b>Halo {{ Auth::user()->name}} ,selamat Datang sebagai {{ Auth::user()->name}}</b>
         @endif
         <ul class="list-unstyled">
         <li><a href="{{ route('home.tampil')}}">Home</a></li><br>
@@ -57,21 +57,23 @@
       <!-- Content -->
       <div class="col-md-9">
         <h4>Direkomendasikan</h4>
+        
         <div class="card bg-dark text-white mb-4">
           <div class="row g-1">
             <div class="col-md-2 game-banner"></div>
             <div class="col-md-4 p-3">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" data-bs-toggle="collapse" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                <img src="{{ asset('public/img/thu.png') }}" class="img-fluid rounded-start" alt="...">
+                <img src="{{ ('img/thu.png') }}" class="img-fluid rounded-start" alt="">
                 </div>
                 <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Game Pertama</h5>
+                    <p class="card-text"></p>
                 </div>
+                </div>  
+                  </div>
                 </div>
             </div>
             </div>

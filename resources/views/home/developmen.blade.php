@@ -40,7 +40,7 @@
       <div class="col-md-3 sidebar">
         <h3>Web Gemes</h3>
         @if(Auth::check())
-            <b>Halo {{ Auth::user()->name}} ,selamat Datang sebagai user</b>
+            <b>Halo {{ Auth::user()->name}} ,selamat Datang sebagai {{ Auth::user()->name}}</b>
         @endif
         <ul class="list-unstyled">
         <li><a href="{{ route('home.tampil')}}">Home</a></li><br>
