@@ -62,6 +62,10 @@
               <h4 class="text-center">halo {{ Auth::user()->name}}</h4>
               <p class="text-center">Game yang Sudah Dimainkan</p>
             </div>
+            <div>
+              <h6 >
+                game yang sudah di mainkan</h6>
+            </div>
           <div class="row g-1">
             <div class="col-md-2 game-banner"></div>
             <div class="col-md-4 p-3">

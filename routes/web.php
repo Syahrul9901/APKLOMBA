@@ -21,3 +21,5 @@ route::get('/home', [HomeController::class, 'tampilHome'])->name('home.tampil');
 route::get('/user' , [HomeController::class, 'tampilUser'])->name('user.tampil');
 route::get('/admin' , [HomeController::class, 'tampilAdmin'])->name('admin.tampil');
 route::get('/developmen' , [HomeController::class, 'tampilDevelopmen'])->name('developmen.tampil');
+
+route::get('/dummy', [HomeController::class, 'tampilDummy'])->name('dummy.tampil');

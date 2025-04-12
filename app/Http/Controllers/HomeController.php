@@ -22,4 +22,8 @@ class HomeController extends Controller
         return view('/home/developmen');
     }
 
+    function tampildummy() {
+        return view('/game/dummy');
+    }
+
 }
